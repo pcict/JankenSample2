@@ -1,0 +1,2 @@
+# JankenSample2
+じゃんけんの結果をSQLiteデータベースに保存
