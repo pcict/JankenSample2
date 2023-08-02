@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -50,13 +51,17 @@ public class MainActivity extends AppCompatActivity {
         //コンピュータのじゃんけんの手を格納
         int pc = (int) (Math.random() * 3) + 1;
         String pcTe = "";
+        ImageView ivJanken = findViewById(R.id.ivJankenComputer);
 
         if (pc == 1) {
             pcTe = "グー";
+            ivJanken.setImageResource(R.drawable.janken_gu);
         } else if (pc == 2) {
             pcTe = "チョキ";
+            ivJanken.setImageResource(R.drawable.janken_choki);
         } else if (pc == 3) {
             pcTe = "パー";
+            ivJanken.setImageResource(R.drawable.janken_pa);
         }
 
         //結果を格納
