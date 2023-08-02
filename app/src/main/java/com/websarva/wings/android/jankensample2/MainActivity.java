@@ -39,29 +39,33 @@ public class MainActivity extends AppCompatActivity {
 
         //ユーザのじゃんけんの手を格納
         int user = 0;
+        ImageView ivJankenUser = findViewById(R.id.ivJankenUser);
 
         if (id == R.id.rbGu) {
             user = 1;
+            ivJankenUser.setImageResource(R.drawable.janken_gu);
         } else if (id == R.id.rbCyoki) {
             user = 2;
+            ivJankenUser.setImageResource(R.drawable.janken_choki);
         } else if (id == R.id.rbPa) {
             user = 3;
+            ivJankenUser.setImageResource(R.drawable.janken_pa);
         }
 
         //コンピュータのじゃんけんの手を格納
         int pc = (int) (Math.random() * 3) + 1;
         String pcTe = "";
-        ImageView ivJanken = findViewById(R.id.ivJankenComputer);
+        ImageView ivJankenComputer = findViewById(R.id.ivJankenComputer);
 
         if (pc == 1) {
             pcTe = "グー";
-            ivJanken.setImageResource(R.drawable.janken_gu);
+            ivJankenComputer.setImageResource(R.drawable.janken_gu);
         } else if (pc == 2) {
             pcTe = "チョキ";
-            ivJanken.setImageResource(R.drawable.janken_choki);
+            ivJankenComputer.setImageResource(R.drawable.janken_choki);
         } else if (pc == 3) {
             pcTe = "パー";
-            ivJanken.setImageResource(R.drawable.janken_pa);
+            ivJankenComputer.setImageResource(R.drawable.janken_pa);
         }
 
         //結果を格納
