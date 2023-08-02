@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">じゃんけん</string>
+    <string name="btn_syoubu">勝負</string>
+    <string name="tv_syouhai">勝敗</string>
+    <string name="tv_seiseki">通算成績</string>
+    <string name="rb_gu">グー</string>
+    <string name="rb_cyoki">チョキ</string>
+    <string name="rb_pa">パー</string>
+    <string name="tv_computer">コンピュータ</string>
+
+</resources>
